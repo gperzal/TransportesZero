@@ -1,0 +1,70 @@
+Configuración del Entorno de Desarrollo:
+Primero, necesitarás instalar Node.js, que viene con npm (Node Package Manager), que es el gestor de paquetes que utilizarás para instalar librerías y herramientas.
+
+Instalar Node.js y npm:
+Ve a nodejs.org y descarga la versión recomendada para tu sistema operativo.
+Sigue las instrucciones de instalación que aparecen en la página o en el instalador.
+Una vez que hayas instalado Node.js y npm, puedes verificar que estén correctamente instalados ejecutando los siguientes comandos en tu terminal o línea de comandos:
+
+sh
+Copy code
+node -v
+npm -v
+Iniciar el Proyecto Frontend con React:
+Crear una nueva aplicación de React:
+Utiliza create-react-app, que es una herramienta oficial de React para crear proyectos con toda la configuración necesaria.
+Abre tu terminal o línea de comandos y ejecuta:
+sh
+Copy code
+npx create-react-app transporte-zero-frontend
+Esto creará un nuevo directorio llamado transporte-zero-frontend con un proyecto de React inicializado.
+
+Navega al directorio del proyecto:
+sh
+Copy code
+cd transporte-zero-frontend
+Ejecuta la aplicación de React:
+sh
+Copy code
+npm start
+Esto abrirá una nueva pestaña en tu navegador predeterminado con la aplicación de React ejecutándose. Deberías ver la página de bienvenida de React.
+
+Instalar React Router:
+Para manejar la navegación en tu aplicación de React, instalarás React Router:
+sh
+Copy code
+npm install react-router-dom
+Configuración del Backend con Node.js y Express:
+Iniciar un nuevo proyecto de Node.js:
+En tu terminal, fuera del directorio del frontend, crea un nuevo directorio para el backend y navega a él:
+sh
+Copy code
+mkdir transporte-zero-backend
+cd transporte-zero-backend
+Ahora, inicia un nuevo proyecto de Node.js:
+sh
+Copy code
+npm init -y
+Esto creará un archivo package.json con la configuración predeterminada.
+
+Instalar Express y otras librerías:
+Ahora, instala Express, que es el framework de Node.js que usarás para crear tu servidor:
+sh
+Copy code
+npm install express
+Para la autenticación con OAuth, necesitarás Passport.js y su estrategia OAuth:
+sh
+Copy code
+npm install passport passport-oauth2
+Configurar la Base de Datos PostgreSQL:
+Instalar PostgreSQL:
+
+Necesitarás descargar e instalar PostgreSQL de postgresql.org.
+Sigue las instrucciones para tu sistema operativo.
+Conectar Node.js a PostgreSQL:
+
+Instala un cliente de PostgreSQL para Node.js:
+sh
+Copy code
+npm install pg
+Con estas herramientas y librerías, tienes todo lo necesario para empezar a desarrollar tanto el frontend como el backend de tu aplicación. En los siguientes pasos, comenzaremos a escribir el código y a configurar cada parte de tu proyecto.
